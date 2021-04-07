@@ -30,7 +30,7 @@ contract ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
      *
      * See {ERC20-constructor}.
      */
-    constructor(string memory name, string memory symbol, uint decimals) ERC20(name, symbol, decimals) {
+    constructor(string memory name, string memory symbol, uint8 decimals) ERC20(name, symbol, decimals) {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
 
         _setupRole(MINTER_ROLE, _msgSender());
