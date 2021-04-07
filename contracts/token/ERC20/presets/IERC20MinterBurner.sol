@@ -31,7 +31,7 @@ interface IERC20MinterBurner is IERC20 {
      *
      * - the caller must have the `MINTER_ROLE`.
      */
-    function mint(address to, uint256 amount) public virtual;
+    function mint(address to, uint256 amount) public external;
 
     /**
      * @dev Burns `amount` new tokens for `to`.
@@ -42,5 +42,5 @@ interface IERC20MinterBurner is IERC20 {
      *
      * - the caller must have the `BURNER_ROLE`.
      */
-    function burn(address to, uint256 amount) public virtual;
+    function burn(address to, uint256 amount) public external;
 }
