@@ -2,9 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "../ERC20.sol";
-import "../../../access/AccessControlEnumerable.sol";
-import "../../../utils/Context.sol";
+import "../IERC20.sol";
 
 /**
  * @dev {ERC20} token, including:
