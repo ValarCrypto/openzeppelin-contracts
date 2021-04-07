@@ -20,7 +20,7 @@ import "../../../utils/Context.sol";
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
-interface ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
+interface IERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
 
     /**
      * @dev Creates `amount` new tokens for `to`.
