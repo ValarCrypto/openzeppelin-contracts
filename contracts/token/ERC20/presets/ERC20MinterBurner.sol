@@ -20,7 +20,7 @@ import "../../../utils/Context.sol";
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
-contract ERC20MinterBurner is Context, AccessControlEnumerable {
+contract ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
 
