@@ -62,7 +62,7 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
 
     mapping (bytes32 => RoleData) private _roles;
 
-    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
+    bytes32 public constant DEFAULT_ADMIN_ROLE = keccak256("ADMIN_ROLE");
 
     /**
      * @dev Emitted when `newAdminRole` is set as ``role``'s admin role, replacing `previousAdminRole`
