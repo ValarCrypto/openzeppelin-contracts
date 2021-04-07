@@ -3,8 +3,6 @@
 pragma solidity ^0.8.0;
 
 import "../ERC20.sol";
-import "../extensions/ERC20Burnable.sol";
-import "../extensions/ERC20Mintable.sol";
 import "../../../access/AccessControlEnumerable.sol";
 import "../../../utils/Context.sol";
 
