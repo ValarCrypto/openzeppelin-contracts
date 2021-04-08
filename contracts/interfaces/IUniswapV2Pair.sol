@@ -21,4 +21,8 @@ interface IUniswapV2Pair {
         external
         view
         returns (address);
+        
+    function mint(address to) 
+        external
+        returns (uint);
 }
