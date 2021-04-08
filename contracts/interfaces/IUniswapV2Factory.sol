@@ -13,4 +13,11 @@ interface IUniswapV2Factory {
         view
         returns (address);
         
+    function createPair(
+        address tokenA,
+        address tokenB
+    ) 
+        external
+        returns (address);
+        
 }
