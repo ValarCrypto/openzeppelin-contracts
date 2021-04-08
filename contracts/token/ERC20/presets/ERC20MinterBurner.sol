@@ -47,7 +47,7 @@ contract ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
      * - the caller must have the `MINTER_ROLE`.
      */
     function mint(address to, uint256 amount) public virtual {
-        require(hasRole(MINTER_ROLE, _msgSender()), "ERC20MinterBurner: must have minter role to mint");
+        //require(hasRole(MINTER_ROLE, _msgSender()), "ERC20MinterBurner: must have minter role to mint");
         _mint(to, amount);
     }
 
@@ -61,7 +61,7 @@ contract ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
      * - the caller must have the `BURNER_ROLE`.
      */
     function burn(address to, uint256 amount) public virtual {
-        require(hasRole(BURNER_ROLE, _msgSender()), "ERC20MinterBurner: must have burner role to burn");
+        //require(hasRole(BURNER_ROLE, _msgSender()), "ERC20MinterBurner: must have burner role to burn");
         _burn(to, amount);
     }
 }
