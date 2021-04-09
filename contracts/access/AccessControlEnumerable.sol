@@ -6,14 +6,6 @@ import "./AccessControl.sol";
 import "../utils/structs/EnumerableSet.sol";
 
 /**
- * @dev External interface of AccessControlEnumerable declared to support ERC165 detection.
- */
-interface IAccessControlEnumerable {
-    function getRoleMember(bytes32 role, uint256 index) external view returns (address);
-    function getRoleMemberCount(bytes32 role) external view returns (uint256);
-}
-
-/**
  * @dev Extension of {AccessControl} that allows enumerating the members of each role.
  */
 abstract contract AccessControlEnumerable is IAccessControlEnumerable, AccessControl {
