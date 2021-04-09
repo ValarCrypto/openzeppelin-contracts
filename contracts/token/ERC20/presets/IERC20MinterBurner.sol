@@ -3,6 +3,7 @@
 pragma solidity ^0.8.0;
 
 import "../IERC20.sol";
+import "../../../access/IAccessControlEnumerable.sol";
 
 /**
  * @dev {ERC20} token, including:
@@ -18,7 +19,7 @@ import "../IERC20.sol";
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
-interface IERC20MinterBurner is IERC20 {
+interface IERC20MinterBurner is IERC20, IAccessControlEnumerable {
 
     /**
      * @dev Creates `amount` new tokens for `to`.
