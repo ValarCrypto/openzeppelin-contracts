@@ -6,7 +6,7 @@ interface IValancerUtils {
     
     
     function checkTokenLiquidity(address token, uint minimumUsdcEquivalent)
-        public
+        external
         view
         returns(bool);
         
