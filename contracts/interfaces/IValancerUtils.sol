@@ -5,6 +5,11 @@ pragma solidity ^0.8.0;
 interface IValancerUtils {
     
     
+    function checkTokenLiquidity(address token, uint minimumUsdcEquivalent)
+        public
+        view
+        returns(bool);
+        
     function getPriceMultiplierOverTime()
         external
         view
