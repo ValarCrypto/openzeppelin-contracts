@@ -23,6 +23,7 @@ import "../../../utils/Context.sol";
 contract ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
+    bytes32 public constant BENEFICIARY_ROLE = keccak256("BENEFICIARY_ROLE");
 
     /**
      * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `BURNER_ROLE` to the
@@ -35,6 +36,7 @@ contract ERC20MinterBurner is Context, AccessControlEnumerable, ERC20 {
 
         _setupRole(MINTER_ROLE, _msgSender());
         _setupRole(BURNER_ROLE, _msgSender());
+        _setupRole(BENEFICIARY_ROLE, _msgSender());
     }
 
     /**
