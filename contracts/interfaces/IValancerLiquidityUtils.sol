@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-interface IValancerUtils {
+interface IValancerLiquidityUtils {
     
     
     function checkTokenLiquidity(address token)
