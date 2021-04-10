@@ -3,6 +3,7 @@
 pragma solidity ^0.8.0;
 
 import "./AccessControl.sol";
+import "./IAccessControlEnumerable.sol";
 import "../utils/structs/EnumerableSet.sol";
 
 /**
