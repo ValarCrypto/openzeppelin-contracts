@@ -21,9 +21,13 @@ import "../../../access/IAccessControlEnumerable.sol";
  */
 interface IValancerToken is IERC20, IAccessControlEnumerable {
 
-    function mainAndPegTokens()
+    function getMainAndPegTokens()
         external
-        returns(array[] memory);
+        view
+        returns(address, address);
+        
+    function updateMainAndPegTokens(address _mainToken, address _pegToken)
+        external;       
 
     function updateValancerContracts(address[] memory _valancerContracts)
         external;
