@@ -9,7 +9,7 @@ struct PairInfo {
 }
 
 interface IValancerLiquidity {
-    function pairContract()
+    function pairInfo()
         external
         view
         returns (PairInfo memory);
