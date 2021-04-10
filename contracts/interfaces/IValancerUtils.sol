@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 interface IValancerUtils {
     
     
-    function checkTokenLiquidity(address token, uint minimumUsdcEquivalent)
+    function checkTokenLiquidity(address token)
         external
         view
         returns(bool);
