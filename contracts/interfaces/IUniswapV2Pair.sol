@@ -24,5 +24,12 @@ interface IUniswapV2Pair {
         
     function mint(address to) 
         external
-        returns (uint);
+        returns (uint);       
+    
+    function swap(
+        uint amount0Out, 
+        uint amount1Out, 
+        address to, 
+        bytes calldata data
+    ) external;
 }
