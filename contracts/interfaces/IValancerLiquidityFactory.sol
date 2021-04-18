@@ -8,4 +8,9 @@ interface IValancerLiquidityFactory {
         external
         view
         returns(address[] memory);
+        
+    function getLiquidityContractByPos(uint pos)
+        external
+        view
+        returns(address);
 }
