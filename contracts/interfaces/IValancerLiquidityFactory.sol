@@ -13,4 +13,9 @@ interface IValancerLiquidityFactory {
         external
         view
         returns(address);
+        
+    function getPairContractByPos(uint pos)
+        external
+        view
+        returns(address);
 }
