@@ -13,7 +13,4 @@ interface IValancerLiquidity {
         external
         view
         returns (address);
-        
-    function grantRole(bytes32 role, address account)
-        external;
 }
