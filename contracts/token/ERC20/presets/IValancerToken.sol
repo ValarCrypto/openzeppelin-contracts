@@ -41,6 +41,10 @@ interface IValancerToken is IERC20, IAccessControlEnumerable {
         external
         view
         returns(uint);
+        
+        
+    function grantRole(bytes32 role, address account)
+        external;
 
 
     /**
