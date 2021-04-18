@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 
 import "../IERC20.sol";
 import "../../../access/IAccessControlEnumerable.sol";
+import "../../../access/IAccessControl.sol";
 
 /**
  * @dev {ERC20} token, including:
@@ -19,7 +20,7 @@ import "../../../access/IAccessControlEnumerable.sol";
  * roles, as well as the default admin role, which will let it grant both minter
  * and pauser roles to other accounts.
  */
-interface IValancerToken is IERC20, IAccessControlEnumerable {
+interface IValancerToken is IERC20, IAccessControlEnumerable, IAccessControl {
 
     function getMainAndPegTokens()
         external
